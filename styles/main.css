@@ -3,8 +3,11 @@
 	margin: 0;
 }
 
-#background {
-	width: 10px;
-	height: auto;
-	border: solid 1px black;
+#header {
+	height: 100%;
+	/*width: 70vw;*/
+	background-image: url("../images/IMG_5376.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: center;
 }
