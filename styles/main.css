@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 * {
 	padding: 0;
 	margin: 0;	
@@ -17,23 +19,31 @@ html, body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow-x: hidden;
-	/*position: center bottom; */
+	position: relative;
+	/*z-index: 0;*/
 }
 
 .box {
-	/*float: right;*/
 	height: 100%;
 	width: 40%;
 	background-color: white;
 	opacity: 0.5;
 	transform: skewX(30deg);
-	/*position: relative;*/
-	/*border: solid 1px red;*/
 	padding-right: 20vw;
-	margin-left: 55%
+	margin-left: 55%;
+	z-index: 1;
+	position: absolute;
 }
 
-#name h1 {
-	border: solid 1px red;
-
+#name {
+	font-size: 250%;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 0.2em;
+	z-index: 200;
+	float: right;
+	position: absolute;
+	margin-left: 55%;
+	margin-top: 10%;
+	color: #073894;
+	opacity: 0.85;
 }
