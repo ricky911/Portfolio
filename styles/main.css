@@ -35,10 +35,13 @@ html, body {
 	position: absolute;
 }
 
-#name {
-	font-size: 250%;
+#name h1{
+	font-size: 4.25rem;
+	height: 20%;
+	width: 42%;
+	border: solid;
 	font-family: 'Oswald', sans-serif;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.2rem;
 	z-index: 200;
 	float: right;
 	position: absolute;
