@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+@font-face {
+	font-family: regular_prime;
+	src: url('Prime Regular.otf');
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -20,9 +25,9 @@
 .col-12 {width: 100%;}
 
 [class*="col-"] {
-    float: left;
-    padding: 15px;
-    border: 1px solid red;
+    /*float: left;*/
+    /*padding: 15px;*/
+    /*border: 1px solid red;*/
 }
 
 html, body {
@@ -34,7 +39,6 @@ html, body {
 
 #header {
 	height: 100%;
-	width: 100%;
 	background: url("../images/brick.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -45,28 +49,31 @@ html, body {
 
 .box {
 	height: 100%;
-	width: 40%;
 	background-color: white;
 	opacity: 0.5;
 	transform: skewX(30deg);
-	padding-right: 20vw;
-	margin-left: 55%;
+	padding-right: 65vw;
+	margin-left: 50%;
 	z-index: 1;
 	position: absolute;
+	float: right;
 }
 
 #name h1{
 	font-size: 4.25rem;
-	height: 20%;
-	width: 42%;
-	border: solid;
-	font-family: 'Oswald', sans-serif;
+	font-family: regular_prime, sans-serif;
 	letter-spacing: 0.2rem;
 	z-index: 200;
-	float: right;
-	position: absolute;
 	margin-left: 55%;
 	margin-top: 10%;
+	/*float: right;*/
+	position: absolute;
 	color: #073894;
 	opacity: 0.85;
+}
+
+#titles {
+	height: 50%;
+	border: solid;
+	z-index: 199;
 }
