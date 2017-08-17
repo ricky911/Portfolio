@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-	/*@font-face {
-		font-family: regular_prime;
-		src: url('Prime Regular.otf');
-	}*/
-
 * {
 	padding: 0;
 	margin: 0;
@@ -12,14 +7,16 @@
 }
 
 html, body {
-	padding: 0;
-	margin: 0;
+	/*padding: 0;
+	margin: 0;*/
 	height: 100%;
 	width:100%;
+	font-size: 1em;
 }
 
 #header {
 	height: 100%;
+	width: auto;
 	background: url("../images/brick.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -54,17 +51,11 @@ html, body {
 	opacity: 0.85;
 }
 
-/*#titles {
-	height: 50%;
-	border: solid;
-	z-index: 100;
-}*/
-
 @media only screen and (max-width: 480px) {
-	b
+	body {font-size: 0.5rem}
 }
 
-@media only screen and (min-width: 481px) {
+/*@media only screen and (min-width: 481px) {
 	
 }
 
