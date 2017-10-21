@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body {
+	padding: 0; 
+	margin: 0;
+	font-size: 16px;
+}
+
+.background {
+	height: 100vh;
+	width: 100vw;
+	/*background: url("../images/brick.jpeg") no-repeat center center fixed;
+	background-size: cover;*/
+	overflow: hidden;
+	position: relative;
+}
+
+.box {
+	background-color: white;
+	background-size: cover;
+	opacity: 0.3;
+	height: 100vh;
+	width: 100vw;
+	padding-right: 50%;
+	float: right;
+	position: absolute;
+}
+
+#name h1{
+	/*font-size: 6vw;*/
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 0.2rem;
+	z-index: 200;
+	position: absolute;
+	left: 55vw;
+	top: 15vh;
+	color: #073894;
+	/*opacity: 3;*/
+}
+
+#title h3 {
+	font-size: 3.2vw;
+	letter-spacing: 0.1rem;
+	/*font-weight: bold;	*/
+	font-family: 'Oswald', sans-serif;
+	z-index: 200;
+	position: absolute;
+	top: 31vh;
+	left: 55.3vw;
+	color: #073894;
+}
+
+@media only screen and (min-width: 481px) {
+	.background { background: url("../images/brick.jpeg") no-repeat center center fixed; 
+	background-size: cover }
+}
+
+@media only screen and (max-width: 480px) {
+	.background { background-color: grey; background-size: cover }
+}
+
+@media only screen and (min-width: 481px) {
+	#name h1 { font-size: 6vw }
+}
+
+@media only screen and (max-width: 480px) {
+	#name h1 { font-size: 6vw;
+	color: red;
+	text-align: center; }
+
+}
