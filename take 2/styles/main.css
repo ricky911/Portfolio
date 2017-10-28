@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body {
+	height: 100%
+	width: 100%;
+}
+
+.navbar {
+	background-color: #073894;
+}
+
+.navbar-toggler,
+.navbar-toggler-right {
+	border: 1px solid white;
+}
+
+span.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-brand {
+	color: #ffbd4a;
+}
+
+.nav-item, .nav-link {
+	color: #ffbd4a;
+	font-size: 20px;
+}
+
+.nav-item:hover {
+	color: #d9d9d9;
+}
+
+header.landpage {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background: url("../images/coffee.jpeg") no-repeat center center fixed;
+	background-size: contain;
+}
+
+/*colors: blue-#073894, grey-d9d9d9, orange-ffbd4a*/
