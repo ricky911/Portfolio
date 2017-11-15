@@ -34,13 +34,13 @@ span.navbar-toggler-icon {
 
 .landImg {
 	width: 100%;
-	/*height: 100vh;*/
+	height: 100vh;
 	position: relative;
 	padding-bottom: 45%;
 	background: url("../images/coffee.jpeg") no-repeat center center fixed;
 	background-size: cover;
 }
-	.landImg > h1 {
+	.landImg > h1, h2, i::before, button {
 		color: white;
 		display: -webkit-box;
 		display: -moz-box;
@@ -54,7 +54,62 @@ span.navbar-toggler-icon {
 		-webkit-justify-content: center;
 		justify-content: center; 
 		position: absolute;
-		top: 0; bottom: 0; left: 40%; right: 10%;
+		top: 0; bottom: 0; left: 32%; right: 10%;
 	}
+
+h1.name {
+	font-size: 64px;
+	opacity: .6;
+}
+
+h2.title {
+	font-size: 32px;
+	top: 20%;
+	left: 39%;
+	opacity: .6;
+}
+
+button.start {
+	background-color: transparent;
+}
+
+i.fa.fa-angle-double-down.fa-4x::before {
+	left: 46%;
+	top: 80%;
+	opacity: .5;
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+	h1.name { font-size: 58px;
+		left: 30%; }
+	h2.title { font-size: 32px;
+		left: 37% }
+}
+
+@media only screen and (max-width: 768px) {
+	h1.name { font-size: 50px;}
+	h2.title { font-size: 32px; 
+		left: 35%;
+		top: 18%; }
+}
+
+@media only screen and (max-width: 575px) {
+	h1.name { font-size: 46px; 
+		left: 22%; }
+	h2.title { font-size: 28px; 
+		top: 16%;
+		left: 30%; }
+} 
+
+@media only screen and (max-width: 420px) {
+	h1.name { font-size: 34px; }
+	h2.title { left: 28%;
+		top: 12%;  
+		font-size: 22px; }
+}
 
 /*colors: blue-#073894, grey-d9d9d9, orange-ffbd4a*/
