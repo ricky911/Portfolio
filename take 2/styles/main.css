@@ -17,6 +17,12 @@ a.nav-link {
 
 .sidebar-wrapper {
 	background-color: grey;
+	height: 100%;
+	display: inline-block;
+}
+
+ {
+	display: inline-block;
 }
 
 /*colors: blue-#073894, grey-d9d9d9, orange-ffbd4a*/
