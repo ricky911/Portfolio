@@ -1,28 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-html, body {
+html {
+	height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Merriweather";
+	font-weight: 700;
+}
+
+body {
+	height: 100%;
+	position: relative;
+}
+
+.bg-image {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background: url("../images/brick.jpeg") no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+.overlay {
+	position: absolute;
 	height: 100%;
 	width: 100%;
-	/*background-color: black;*/
+	background-color: #073894;
+	opacity: 0.35;
 }
 
-.container-fluid {
-	padding: 0;
-}
-
-a.nav-link {
-	text-align: center;
-	/*border-bottom: 1px solid black;*/
-}
-
-.sidebar-wrapper {
-	background-color: grey;
+.masthead {
+	position: absolute;
+	overflow: hidden;
 	height: 100%;
-	display: inline-block;
+	width: 40.3rem;
 }
 
- {
-	display: inline-block;
+.masthead .masthead-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #cd9557;
+	opacity: .40;
 }
 
 /*colors: blue-#073894, grey-d9d9d9, orange-ffbd4a*/
