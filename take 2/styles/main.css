@@ -28,9 +28,30 @@ body {
 	z-index: -1;
 }
 
-.heading-text {
+.bg-overlay {
 	position: absolute;
-	font-size: 32px;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	opacity: .35;
 }
 
+.heading-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #073894;
+}
+
+h1.title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4em;
+	font-weight: 500;
+}
+
+h3.subtitle {
+	font-family: 'Montserrat', sans-serif;
+	text-align: right;
+}
 /*colors: blue-#073894, grey-d9d9d9, orange-ffbd4a*/
