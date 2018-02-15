@@ -28,31 +28,9 @@ body {
 	z-index: -1;
 }
 
-.overlay {
+.heading-text {
 	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-color: #073894;
-	opacity: 0.35;
-}
-
-.masthead {
-	position: absolute;
-	overflow: hidden;
-	height: 100%;
-	width: 40.3rem;
-}
-
-.masthead .masthead-bg {
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #cd9557;
-	opacity: .40;
+	font-size: 32px;
 }
 
 /*colors: blue-#073894, grey-d9d9d9, orange-ffbd4a*/
