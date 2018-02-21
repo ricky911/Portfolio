@@ -19,6 +19,19 @@ body {
 	position: relative;
 }
 
+header.landing {
+	height: auto;
+	/*overflow: hidden;*/
+	clear: both;
+}
+
+div.wrapper {
+	height: 100%;
+	/*clear: both;	*/
+	/*overflow: hidden;*/
+
+}
+
 .bg-image {
 	position: absolute;
 	height: 100%;
@@ -29,7 +42,7 @@ body {
 }
 
 .bg-overlay {
-	position: absolute;
+	position: relative;
 	height: 100%;
 	width: 100%;
 	background-color: white;
@@ -53,5 +66,10 @@ h1.title {
 h3.subtitle {
 	font-family: 'Montserrat', sans-serif;
 	text-align: right;
+}
+
+.about {
+	/*position: relative;*/
+
 }
 /*colors: blue-#073894, grey-d9d9d9, orange-ffbd4a*/
