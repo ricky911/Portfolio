@@ -19,24 +19,15 @@ body {
 	position: relative;
 }
 
-header.landing {
-	height: auto;
-	/*overflow: hidden;*/
-	clear: both;
-}
-
 div.wrapper {
 	height: 100%;
-	/*clear: both;	*/
-	/*overflow: hidden;*/
-
 }
 
 .bg-image {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: url("../images/brick.jpeg") no-repeat center;
+	background: url("../images/brick.jpeg") fixed no-repeat center;
 	background-size: cover;
 	z-index: -1;
 }
@@ -66,10 +57,33 @@ h1.title {
 h3.subtitle {
 	font-family: 'Montserrat', sans-serif;
 	text-align: right;
+	padding-right: 8px;
 }
 
-.about {
-	/*position: relative;*/
-
+section.about {
+	height: 100%;
+	position: relative;
+	background-color: #ffbd4a;
+	color: #073894;
 }
+
+h1.about-title {
+	font-size: 3em;
+	position: absolute;
+	right: 50%;
+	top: 10%;
+	transform: translate(50%, 10%);
+	font-family: 'Montserrat', sans-serif;
+}
+
+h3.about-subtitle {
+	font-size: 2.5em;
+	position: absolute;
+	right: 50%;
+	top: 25%;
+	transform: translate(50%, 10%);
+	font-family: 'Montserrat', sans-serif;
+}
+
+
 /*colors: blue-#073894, grey-d9d9d9, orange-ffbd4a*/

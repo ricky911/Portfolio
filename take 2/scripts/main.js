@@ -1,45 +1,11 @@
-// var str = "FirstLine\n\\Second Line\\\rThirdLine"
+var i = 0;
+var words = "am a web developer";
+var speed = 50;
 
-// console.log(str);
-
-// var lastName = "Aguayo"
-
-// console.log(lastName[lastName.length - 1])
-
-// function reuseableFunction() {
-//   console.log("Hi World");
-// }
-
-// reuseableFunction();
-
-
-// Setup
-// var outerWear = "T-Shirt";
-
-// function myOutfit() {
-//   // Only change code below this line
-//   var outerWear = "sweater"
-  
-//   console.log(outerWear);
-//   // Only change code above this line
-//   return outerWear;
-// }
-
-// console.log(outerWear);
-
-// function timesFive(num) {
-// 	return num * 5;
-// }
-
-// console.log(timesFive(4));
-
-function nextInLine(arr, item) {
-  // Your code here
-  arr.push(item);
-  arr.shift();
-  
-  return arr;  // Change this line
+function typeWriter(){
+	if(i < words.length){
+		document.getElementById("phrases").innerHTML += words.charAt(i);
+		i++;
+		setTimeout(typeWriter, speed);
+	}
 }
-
-console.log(nextInLine([1,2,3,4], 5))
-
