@@ -1,5 +1,5 @@
 var i = 0;
-var words = ["am a web developer", "am probably hungry"];
+var words = ["am a web developer", "freelance", "am probably hungry"];
 var speed = 50;
 
 function typeWriter(){
