@@ -1,0 +1,112 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #8cb0ea;
+  padding: 3rem; }
+
+.heading-primary {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 6rem;
+  backface-visibility: hidden; }
+  .heading-primary--main {
+    display: block;
+    font-size: 7rem;
+    letter-spacing: 2px;
+    animation: moveInLeft 1s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    animation: moveInTop 1s ease-out; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 4rem;
+  position: relative;
+  font-size: 1.6rem;
+  display: inline-block;
+  border-radius: 10rem;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn--blue {
+  background-color: #214887;
+  color: #fff; }
+
+.btn--white {
+  background-color: #fff;
+  color: #8cb0ea; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(140, 176, 234, 0.7), rgba(33, 72, 135, 0.7)), url(../images/desk.jpg);
+  background-position: top;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+  position: relative;
+  z-index: 100; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.about {
+  height: 75vh;
+  width: 100%; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -15rem;
+  position: relative; }
