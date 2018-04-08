@@ -1,4 +1,3 @@
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -83,6 +82,12 @@ body {
 .u-margin-bottom-lg {
   margin-bottom: 8rem !important; }
 
+.u-margin-top-sm {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-med {
+  margin-top: 4rem !important; }
+
 .u-margin-top-lg {
   margin-top: 8rem !important; }
 
@@ -128,7 +133,6 @@ body {
 
 .about {
   height: 100rem;
-  width: 100%;
   display: inline-block; }
   .about__self {
     width: 30rem;
@@ -139,32 +143,41 @@ body {
     text-align: center;
     margin: auto; }
   .about__shape {
-    height: 40rem;
+    height: 34rem;
     width: 34rem;
-    border-radius: 3px;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    border-radius: 100%; }
   .about__img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     transform: scale(1.3);
     transition: all .5s; }
-  .about:hover .about__img {
-    transform: scale(1);
-    filter: blur(3px) brightness(80%); }
   .about__caption {
     height: 100%;
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
     text-align: center;
     color: #fff;
-    font-size: 1.5rem;
-    text-transform: uppercase; }
-    .about__caption:hover {
-      transform: translate(-50%, -50%) scale(1.2); }
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: all .6s;
+    opacity: 0; }
+    .about__caption--title {
+      font-size: 3.5rem;
+      display: block;
+      font-weight: 700;
+      color: #8cb0ea;
+      text-align: center; }
+  .about:hover .about__img {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%); }
+  .about:hover .about__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2); }
 
 .row {
   max-width: 114rem;
