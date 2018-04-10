@@ -1,5 +1,5 @@
 .about {
-    height: 100rem;
+    // height: 100rem;
     // width: 100%;
     display: inline-block;
 
@@ -22,18 +22,29 @@
     }
 
     &__img {
-        height: 34rem;
-        width: 34rem;
+        height: 100%;
+        width: 100%;
         border-radius: 100%;
         object-fit: cover;
         transform: scale(1.3);
         transition: all .5s;
     }
 
+    &__title {
+        font-size: 5rem;
+        @include absCenter;
+        font-weight: 700;
+        color: $color-primary-light;
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 1;
+        transition: all .5s;
+    }
+
     &__caption {
         height: 100%;
         position: absolute;
-        top: 80%;
+        top: 120%;
         left: 50%;
         transform: translate(-50%, -50%) scale(.8);
         text-align: center;
@@ -42,15 +53,11 @@
         text-transform: uppercase;
         transition: all .6s;
         opacity: 0;
+    }
 
-        &--title {
-            font-size: 3.5rem;
-            display: block;
-            font-weight: 700;
-            color: $color-primary-light;
-            text-align: center;
-            opacity: 1;
-        }
+    &:hover &__title {
+        top: 20%; 
+        opacity: 0;
     }
 
     &:hover &__img {
@@ -59,6 +66,7 @@
     }
 
     &:hover &__caption {
+        top: 83%;
         opacity: 1;
         transform: translate(-50%, -50%) scale(1.2);
     }   
