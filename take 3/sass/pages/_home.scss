@@ -6,6 +6,15 @@
 }
 
 .section-projects {
-    background-image: url(../images/brick.jpeg);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.7),
+        rgba($color-primary-dark, 0.7)),
+    url(../images/brick.jpeg);
+    -webkit-clip-path: polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
+    clip-path: polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
+    background-size: cover;
     position: relative;
+    padding: 20rem 0;
+    margin-top: -9rem;
 }
