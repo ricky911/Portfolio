@@ -227,6 +227,27 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.projects {
+  position: relative; }
+  .projects__title {
+    display: block;
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 5rem;
+    margin-bottom: 5rem; }
+
+.card {
+  height: 30rem; }
+  .card__side {
+    height: 30rem;
+    width: 80%;
+    background-image: linear-gradient(to right bottom, #f7f7f7, #8cb0ea);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%); }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 5rem 0;
@@ -238,6 +259,5 @@ body {
   -webkit-clip-path: polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
   clip-path: polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
   background-size: cover;
-  position: relative;
-  padding: 20rem 0;
-  margin-top: -9rem; }
+  height: 95vh;
+  margin-top: -12rem; }
