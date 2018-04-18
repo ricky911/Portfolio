@@ -15,24 +15,49 @@
 
 .card {
     height: 30rem;
+    position: relative;
+    perspective: 100rem;
 
     &__side {
         height: 30rem;
-        width: 80%;
-        // background-color: red;
-        background-image: linear-gradient(
-            to right bottom,
-            rgba($color-grey-light, 1),
-            rgba($color-primary-light, 1));
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+        backface-visibility: hidden;
+        transition: all .8s ease;
+
+        &--front {
+            background-color: rgba($color-grey-light, 0.8);
+        }
+
+        &--back {
+            background-color: rgba($color-grey-light, 0.8);
+            transform: rotateY(180deg);
+        }
     }
 
-    &__picture {
-        
-    }
+   &:hover &__side--front {
+       transform: rotateY(-180deg);
+   }
 
+   &:hover &__side--back {
+       transform: rotateY(0);
+   }
 
+   &__picture {
+    //    @include absCenter;
+    position: absolute;
+    top: 20%;
+    left: 29%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
 
-
+       &--1 {
+           background-image: url(../images/logo-green-1x.png)
+       }
+   }
 }
